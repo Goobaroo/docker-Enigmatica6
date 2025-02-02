@@ -11,10 +11,10 @@ else
 	exit 99
 fi
 
-if ! [[ -f Enigmatica6Server-1.9.0.zip ]]; then
+if ! [[ -f Enigmatica6Server-1.10.0.zip ]]; then
     rm -fr configs defaultconfigs kubejs libraries mods forge-*.jar server-setup-config.yaml server-start.* serverstarter-*.jar Enigmatica6Server-*.zip
 	rm -fr config defaultconfigs global_data_packs global_resource_packs mods packmenu
-	curl -Lo Enigmatica6Server-1.9.0.zip 'https://edge.forgecdn.net/files/4915/209/Enigmatica6Server-1.9.0.zip' && unzip -u -o 'Enigmatica6Server-1.9.0.zip' -d /data
+	curl -Lo Enigmatica6Server-1.10.0.zip 'https://edge.forgecdn.net/files/6147/351/Enigmatica6Server-1.10.0.zip' && unzip -u -o 'Enigmatica6Server-1.10.0.zip' -d /data
 	chmod u+x start-server.sh
 fi
 
